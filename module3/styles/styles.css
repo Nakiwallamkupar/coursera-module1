@@ -50,6 +50,23 @@ input[type="text"] {
     transform: rotate(360deg);
   }
 }
-#foundItemList li{
-  padding-bottom: 10px;
+.alert
+{
+  font-size: 1.3em; 
+	color: red;
+  background-color: grey;
+}
+.dontwant{
+  border-radius: 20px;
+}
+.dontwant:hover
+{
+ background-color: rgb(18, 101, 196); 
+}
+#narrow{
+  border-radius: 20px;
+}
+.form-group input[type="text"]:focus{
+  width:240px;
+  border-radius: 30px;
 }

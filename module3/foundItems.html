@@ -1,0 +1,9 @@
+<div>
+	<ul>
+		<li ng-repeat="foundItem in narrowItdown.items">
+			{{foundItem.name}}, {{foundItem.short_name}}, {{foundItem.description}}
+			<button class="dontwant" ng-click="narrowItdown.onRemove({index: $index});">Don't want this one!</button>
+		</li>
+	</ul>
+	<div ng-if="narrowItdown.nothingFound();" class="alert alert-info">Nothing found</div>
+</div>
