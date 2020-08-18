@@ -76,7 +76,7 @@
 				}
 				return foundItems;
 			},function error(response){
-				throw new Error("Error occured!");
+				throw new Error("Failure!");
 			});
 		};
 	}
