@@ -1,0 +1,19 @@
+h1{
+	text-align: center;
+}
+.b{
+	text-align: center;
+}
+button{
+	font-size: 1.2em;
+}
+a{
+	text-decoration: none;
+	font-size: 1.1em; 
+}
+.active{
+	background-color: grey;
+}
+span{
+	font-size: 1.1em;
+}
