@@ -14,7 +14,7 @@
           <input type="text" name="phone" ng-model="signUpCtrl.user.phone" class="form-control" placeholder="###-###-####" pattern="(\d{3})-(\d{3})-(\d{4})" required>
           <span class="error" ng-if="formSignup.phone.$invalid && formSignup.phone.$touched">Phone must be in the format ###-###-####</span>
         <label>Favorite Dish:<span class="req">  *</span></label>
-          <input type="text" name="menuShortName" ng-model="signUpCtrl.user.favMenu" ng-blur="signUpCtrl.processForm(false)" class="form-control" placeholder="Menu Short Name or Number">
+          <input type="text" name="menuShortName" ng-model="signUpCtrl.user.favMenu" ng-blur="signUpCtrl.processForm(false)" class="form-control" placeholder="Menu Short Name or Number(e.g.:L1)">
           <span class="error" ng-if="signUpCtrl.error">No such menu number exists</span>
           <span class="valid" ng-if="signUpCtrl.valid"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Valid Menu Item!</span>
         <button ng-disabled="formSignup.$invalid" ng-click="signUpCtrl.processForm(true)" class="btn btn-lg btn-success btn-block" type="submit">Sign Up</button>
