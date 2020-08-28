@@ -1,19 +1,19 @@
 <div class="container">
     <form name="formSignup" class="form-signup" novalidate>
         <h2 class="form-signup-heading"><div class="text-center"><span class="glyphicon glyphicon-user"></span> Sign Up</div></h2>
-        <label>First Name:</label>
+        <label>First Name:<span class="req">  *</span></label>
           <input type="text" name="firstName" ng-model="signUpCtrl.user.firstName" class="form-control" placeholder="Your First Name" required>
           <span class="error" ng-if="formSignup.firstName.$error.required && formSignup.firstName.$touched">First Name Required!</span>
-        <label>Last Name:</label>
+        <label>Last Name:<span class="req">  *</span></label>
           <input type="text" name="lastName" ng-model="signUpCtrl.user.lastName" class="form-control" placeholder="Your Last Name" required>
           <span class="error" ng-if="formSignup.lastName.$error.required && formSignup.lastName.$touched">Last Name Required!</span>
-        <label>Email Address:</label>
+        <label>Email Address:<span class="req">  *</span></label>
           <input type="email" name="email" ng-model="signUpCtrl.user.email" class="form-control" placeholder="example@domain" required>
           <span class="error" ng-if="formSignup.email.$invalid && formSignup.email.$touched">Please enter a valid email address</span>
-        <label>Phone no.</label>
+        <label>Phone no.<span class="req">  *</span></label>
           <input type="text" name="phone" ng-model="signUpCtrl.user.phone" class="form-control" placeholder="###-###-####" pattern="(\d{3})-(\d{3})-(\d{4})" required>
           <span class="error" ng-if="formSignup.phone.$invalid && formSignup.phone.$touched">Phone must be in the format ###-###-####</span>
-        <label>Favorite Dish:</label>
+        <label>Favorite Dish:<span class="req">  *</span></label>
           <input type="text" name="menuShortName" ng-model="signUpCtrl.user.favMenu" ng-blur="signUpCtrl.processForm(false)" class="form-control" placeholder="Menu Short Name or Number">
           <span class="error" ng-if="signUpCtrl.error">No such menu number exists</span>
           <span class="valid" ng-if="signUpCtrl.valid"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Valid Menu Item!</span>
